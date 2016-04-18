@@ -1,0 +1,336 @@
+System Metrics using Elasticsearch
+
+{
+  "took" : 9,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 3350,
+    "max_score" : 1.0,
+    "hits" : [ {
+      "_index" : "topbeat-2016.04.18",
+      "_type" : "filesystem",
+      "_id" : "AVQoyo_dcHTjBU63Vx2z",
+      "_score" : 1.0,
+      "_source" : {
+        "@timestamp" : "2016-04-18T09:54:04.033Z",
+        "beat" : {
+          "hostname" : "RANA",
+          "name" : "RANA"
+        },
+        "count" : 1,
+        "fs" : {
+          "device_name" : "none",
+          "total" : 0,
+          "used" : 0,
+          "used_p" : 0,
+          "free" : 0,
+          "avail" : 0,
+          "files" : 0,
+          "free_files" : 0,
+          "mount_point" : "/sys/kernel/debug"
+        },
+        "type" : "filesystem"
+      }
+    }, {
+      "_index" : "topbeat-2016.04.18",
+      "_type" : "filesystem",
+      "_id" : "AVQoyo_dcHTjBU63Vx26",
+      "_score" : 1.0,
+      "_source" : {
+        "@timestamp" : "2016-04-18T09:54:04.033Z",
+        "beat" : {
+          "hostname" : "RANA",
+          "name" : "RANA"
+        },
+        "count" : 1,
+        "fs" : {
+          "device_name" : "none",
+          "total" : 104857600,
+          "used" : 61440,
+          "used_p" : 0,
+          "free" : 104796160,
+          "avail" : 104796160,
+          "files" : 490835,
+          "free_files" : 490795,
+          "mount_point" : "/run/user"
+        },
+        "type" : "filesystem"
+      }
+    }, {
+      "_index" : "topbeat-2016.04.18",
+      "_type" : "filesystem",
+      "_id" : "AVQoyo_dcHTjBU63Vx3B",
+      "_score" : 1.0,
+      "_source" : {
+        "@timestamp" : "2016-04-18T09:54:04.034Z",
+        "beat" : {
+          "hostname" : "RANA",
+          "name" : "RANA"
+        },
+        "count" : 1,
+        "fs" : {
+          "device_name" : "/dev/sda1",
+          "total" : 366997504,
+          "used" : 32083968,
+          "used_p" : 0.09,
+          "free" : 334913536,
+          "avail" : 334913536,
+          "files" : 392600,
+          "free_files" : 392437,
+          "mount_point" : "/media/rana/A0F03D7AF03D57AC"
+        },
+        "type" : "filesystem"
+      }
+    }, {
+      "_index" : "topbeat-2016.04.18",
+      "_type" : "process",
+      "_id" : "AVQoyo_dcHTjBU63Vx3L",
+      "_score" : 1.0,
+      "_source" : {
+        "@timestamp" : "2016-04-18T09:51:04.766Z",
+        "beat" : {
+          "hostname" : "RANA",
+          "name" : "RANA"
+        },
+        "count" : 1,
+        "proc" : {
+          "cmdline" : "/sbin/wpa_supplicant -B -P /run/sendsigs.omit.d/wpasupplicant.pid -u -s -O /var/run/wpa_supplicant",
+          "cpu" : {
+            "user" : 320,
+            "user_p" : 7.0E-4,
+            "system" : 3210,
+            "total" : 3530,
+            "start_time" : "12:00"
+          },
+          "mem" : {
+            "size" : 31621120,
+            "rss" : 4964352,
+            "rss_p" : 0,
+            "share" : 4362240
+          },
+          "name" : "wpa_supplicant",
+          "pid" : 1045,
+          "ppid" : 1,
+          "state" : "sleeping",
+          "username" : "root"
+        },
+        "type" : "process"
+      }
+    }, {
+      "_index" : "topbeat-2016.04.18",
+      "_type" : "process",
+      "_id" : "AVQoyo_dcHTjBU63Vx3X",
+      "_score" : 1.0,
+      "_source" : {
+        "@timestamp" : "2016-04-18T09:51:04.772Z",
+        "beat" : {
+          "hostname" : "RANA",
+          "name" : "RANA"
+        },
+        "count" : 1,
+        "proc" : {
+          "cmdline" : "/usr/sbin/kerneloops",
+          "cpu" : {
+            "user" : 0,
+            "user_p" : 1.0E-4,
+            "system" : 180,
+            "total" : 180,
+            "start_time" : "12:00"
+          },
+          "mem" : {
+            "size" : 38252544,
+            "rss" : 2424832,
+            "rss_p" : 0,
+            "share" : 2322432
+          },
+          "name" : "kerneloops",
+          "pid" : 1273,
+          "ppid" : 1,
+          "state" : "sleeping",
+          "username" : "kernoops"
+        },
+        "type" : "process"
+      }
+    }, {
+      "_index" : "topbeat-2016.04.18",
+      "_type" : "process",
+      "_id" : "AVQoypCScHTjBU63Vx3j",
+      "_score" : 1.0,
+      "_source" : {
+        "@timestamp" : "2016-04-18T09:51:04.777Z",
+        "beat" : {
+          "hostname" : "RANA",
+          "name" : "RANA"
+        },
+        "count" : 1,
+        "proc" : {
+          "cmdline" : "/usr/sbin/dnsmasq --no-resolv --keep-in-foreground --no-hosts --bind-interfaces --pid-file=/run/sendsigs.omit.d/network-manager.dnsmasq.pid --listen-address=127.0.1.1 --conf-file=/var/run/NetworkManager/dnsmasq.conf --cache-size=0 --proxy-dnssec --enable-dbus=org.freedesktop.NetworkManager.dnsmasq --conf-dir=/etc/NetworkManager/dnsmasq.d",
+          "cpu" : {
+            "user" : 200,
+            "user_p" : 1.0E-4,
+            "system" : 520,
+            "total" : 720,
+            "start_time" : "12:00"
+          },
+          "mem" : {
+            "size" : 36073472,
+            "rss" : 2678784,
+            "rss_p" : 0,
+            "share" : 2596864
+          },
+          "name" : "dnsmasq",
+          "pid" : 2044,
+          "ppid" : 769,
+          "state" : "sleeping",
+          "username" : "nobody"
+        },
+        "type" : "process"
+      }
+    }, {
+      "_index" : "topbeat-2016.04.18",
+      "_type" : "process",
+      "_id" : "AVQoypCTcHTjBU63Vx3u",
+      "_score" : 1.0,
+      "_source" : {
+        "@timestamp" : "2016-04-18T09:51:11.758Z",
+        "beat" : {
+          "hostname" : "RANA",
+          "name" : "RANA"
+        },
+        "count" : 1,
+        "proc" : {
+          "cmdline" : "upstart-dbus-bridge --daemon --session --user --bus-name session",
+          "cpu" : {
+            "user" : 1210,
+            "user_p" : 1.0E-4,
+            "system" : 610,
+            "total" : 1820,
+            "start_time" : "12:00"
+          },
+          "mem" : {
+            "size" : 22921216,
+            "rss" : 1675264,
+            "rss_p" : 0,
+            "share" : 1503232
+          },
+          "name" : "upstart-dbus-br",
+          "pid" : 2328,
+          "ppid" : 2198,
+          "state" : "sleeping",
+          "username" : "rana"
+        },
+        "type" : "process"
+      }
+    }, {
+      "_index" : "topbeat-2016.04.18",
+      "_type" : "process",
+      "_id" : "AVQoypCTcHTjBU63Vx3y",
+      "_score" : 1.0,
+      "_source" : {
+        "@timestamp" : "2016-04-18T09:51:11.761Z",
+        "beat" : {
+          "hostname" : "RANA",
+          "name" : "RANA"
+        },
+        "count" : 1,
+        "proc" : {
+          "cmdline" : "/usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes",
+          "cpu" : {
+            "user" : 10,
+            "user_p" : 0,
+            "system" : 0,
+            "total" : 10,
+            "start_time" : "12:00"
+          },
+          "mem" : {
+            "size" : 354177024,
+            "rss" : 5287936,
+            "rss_p" : 0,
+            "share" : 5058560
+          },
+          "name" : "gvfsd-fuse",
+          "pid" : 2365,
+          "ppid" : 2198,
+          "state" : "sleeping",
+          "username" : "rana"
+        },
+        "type" : "process"
+      }
+    }, {
+      "_index" : "topbeat-2016.04.18",
+      "_type" : "process",
+      "_id" : "AVQoypCTcHTjBU63Vx33",
+      "_score" : 1.0,
+      "_source" : {
+        "@timestamp" : "2016-04-18T09:51:11.763Z",
+        "beat" : {
+          "hostname" : "RANA",
+          "name" : "RANA"
+        },
+        "count" : 1,
+        "proc" : {
+          "cmdline" : "/usr/lib/ibus/ibus-x11 --kill-daemon",
+          "cpu" : {
+            "user" : 40,
+            "user_p" : 0,
+            "system" : 0,
+            "total" : 40,
+            "start_time" : "12:00"
+          },
+          "mem" : {
+            "size" : 396361728,
+            "rss" : 12972032,
+            "rss_p" : 0,
+            "share" : 10149888
+          },
+          "name" : "ibus-x11",
+          "pid" : 2383,
+          "ppid" : 2198,
+          "state" : "sleeping",
+          "username" : "rana"
+        },
+        "type" : "process"
+      }
+    }, {
+      "_index" : "topbeat-2016.04.18",
+      "_type" : "process",
+      "_id" : "AVQoypCTcHTjBU63Vx34",
+      "_score" : 1.0,
+      "_source" : {
+        "@timestamp" : "2016-04-18T09:51:11.764Z",
+        "beat" : {
+          "hostname" : "RANA",
+          "name" : "RANA"
+        },
+        "count" : 1,
+        "proc" : {
+          "cmdline" : "/usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session",
+          "cpu" : {
+            "user" : 910,
+            "user_p" : 1.0E-4,
+            "system" : 690,
+            "total" : 1600,
+            "start_time" : "12:00"
+          },
+          "mem" : {
+            "size" : 128126976,
+            "rss" : 4730880,
+            "rss_p" : 0,
+            "share" : 4571136
+          },
+          "name" : "at-spi2-registr",
+          "pid" : 2385,
+          "ppid" : 2198,
+          "state" : "sleeping",
+          "username" : "rana"
+        },
+        "type" : "process"
+      }
+    } ]
+  }
+}
